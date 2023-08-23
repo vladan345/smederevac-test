@@ -23,6 +23,7 @@ gltfLoader.load("/smederevac/smederevac.gltf", (gltf) => {
 const canvas = document.querySelector("#threejs");
 
 const scene = new THREE.Scene();
+scene.background = null;
 /**
  * Test cube
  */
@@ -66,7 +67,7 @@ const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   alhpa: true,
 });
-
+renderer.setClearColor(0x000000, 0);
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
