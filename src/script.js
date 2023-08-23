@@ -36,7 +36,7 @@ scene.background = null;
 /**
  * Lights
  */
-const ambientLight = new THREE.AmbientLight("#fff", 0.5);
+const ambientLight = new THREE.AmbientLight("#fff", 1);
 
 const pointLight = new THREE.PointLight("#fff", 10);
 const pointLightHelper = new THREE.PointLightHelper(pointLight);
