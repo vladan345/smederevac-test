@@ -1,9 +1,55 @@
+@font-face {
+  src: url("../static/fonts/Matter-Bold.otf");
+  font-family: "Matter";
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  overflow: hidden;
-  background: lightblue;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+  background-size: cover;
+}
+#app {
+  height: 600vh;
+  background: linear-gradient(0deg, #7000ff 0%, #0ff 100%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  height: 100vh;
+  padding-top: 140px;
+}
+/* #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+} */
+p {
+  font-size: 24px;
+  color: black;
+  font-family: "Matter";
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 120px;
+}
+h1 {
+  font-size: 120px;
+  color: black;
+  font-family: "Matter";
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+canvas {
+  z-index: 0;
+  position: fixed;
+  top: 0;
 }
